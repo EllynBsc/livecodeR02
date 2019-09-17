@@ -1,0 +1,14 @@
+<div class="container">
+    <%= simple_form_for(mango) do |f| %>
+  <div class="row">
+    <div class="col-6 offset-3">
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :found_on %>
+    <%= f.select :species, collection: Pet::SPECIES %>
+    <%= f.submit class: 'btn btn-primary' %>
+    </div>
+    <% end %>
+  </div>
+</div>
+

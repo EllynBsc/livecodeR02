@@ -1,0 +1,9 @@
+<h1>Pets#show</h1>
+<p>Find me in app/views/pets/show.html.erb</p>
+
+<h1><%= @pet.name %></h1>
+<%= @pet.address %>
+<%= @pet.found_on %>
+<%= @pet.species %>
+
+<%= link_to 'go away', pet_path, method: :delete, data: {confirm: 'are you sure????' } %>
